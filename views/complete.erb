@@ -41,30 +41,24 @@
         <h2>送信内容</h2>
     <table class ="table">
         <tr>
-        　  <td class="text-center">会社名</td>
-        　  <% name =params["company"] %>
-      　　    <td><%= name %></td>
+            <td>会社名</td>
+            <td><%= params["company"] %></td>
         </tr>
         <tr>
-        　  <td class="text-center">氏名</td>
-        　  <% name =params["name"] %>
-      　  　 <td><%= name %></td>
+            <td>氏名</td>
+            <td><%= params["name"] %></td>
         </tr>
-         <tr>
-        　  <td class="text-center">メール</td>
-        　  <% name =params["mail"] %>
-      　　   <td><%= name %></td>
+        <tr>
+            <td>メール</td>
+            <td><%= params["mail"] %></td>
         </tr>
-         <tr>
-        　  <td class="text-center">電話番号</td>
-        　  <% name =params["tel"] %>
-      　　    <td><%= name %></td>
+        <tr>
+            <td>電話番号</td>
+            <td><%= params["tel"]  %></td>
         </tr>
-         <tr>
-        　  <td class="text-center">内容</td>
-        　  <% name =params["content"] %>
-        　  <% name = name.gsub(/\r\n|\r|\n/, "<br>")%>
-      　　    <td><%= name %></td>
+        <tr>
+            <td>内容</td><%params["content"]=params["content"].gsub(/\r\n|\r|\n/,"<br>")%>
+            <td><%= params["content"] %></td>
         </tr>
     </table>    
         <div class="text-center mb-4">
